@@ -42,7 +42,7 @@ st.title("🧠 Gemini Chat App")
 
 user_input = st.text_input(" Enter The question : ")
 
-if st.button("Send"):
+if st.button("Search"):
 
     if user_input.strip() == "":
         st.warning("Please enter a question.")
