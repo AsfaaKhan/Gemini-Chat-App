@@ -36,7 +36,7 @@ async def get_response(user_input):
     return result.final_output
 
 # Stremlit
-st.set_page_config(page_title="Gemini Chat Agent",page_icon="🧠",layout="centered")
+st.set_page_config(page_title="Gemini Search App",page_icon="🧠",layout="centered")
 
 st.title("🧠 Gemini Search App")
 
