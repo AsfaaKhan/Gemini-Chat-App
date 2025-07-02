@@ -36,9 +36,9 @@ async def get_response(user_input):
     return result.final_output
 
 # Stremlit
-st.set_page_config(page_title="Gemini Search App",page_icon="🧠",layout="centered")
+st.set_page_config(page_title="Search App",page_icon="🧠",layout="centered")
 
-st.title("🧠 Gemini Search App")
+st.title("🧠 Search App")
 
 user_input = st.text_input(" Enter The question : ")
 
@@ -48,7 +48,7 @@ if st.button("Search"):
         st.warning("Please enter a question.")
 
     else:
-        with st.spinner("🗯 Thinking..."):
+        with st.spinner("⏳ Thinking..."):
             response = asyncio.run(get_response(user_input))
             st.title("🎊 Your Answer: ")
             st.write(response)
