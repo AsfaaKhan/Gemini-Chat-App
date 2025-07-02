@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 import os
-from agents import Agent, AsyncOpenAI,OpenAIChatCompletionsModel, RunConfig, Runner
+from agents import Agent, AsyncOpenAI,OpenAIChatCompletionsModel, RunConfig, Runner,function_tool
 import streamlit as st
 import asyncio
 
@@ -38,7 +38,7 @@ async def get_response(user_input):
 # Stremlit
 st.set_page_config(page_title="Gemini Chat Agent",page_icon="🧠",layout="centered")
 
-st.title("🧠 Gemini Chat App")
+st.title("🧠 Gemini Search App")
 
 user_input = st.text_input(" Enter The question : ")
 
